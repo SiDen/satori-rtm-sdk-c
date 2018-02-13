@@ -40,6 +40,7 @@
 #endif
 
 #ifdef ENABLE_THREAD_SAFETY
+# include <pthread.h>
 static pthread_once_t bio_init_once = PTHREAD_ONCE_INIT;
 #endif
 
